@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class DecimalToOctal {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter any decimal number");
@@ -14,7 +15,7 @@ public class DecimalToOctal {
             temp = temp / 8;
             b = r + b;
         }
-        System.out.println("Octal Equivalent of " + num + " is " + b);
+        System.out.println("octal Equivalent of " + num + " is " + b);
 
     }
 }
