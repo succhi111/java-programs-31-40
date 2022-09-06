@@ -11,11 +11,14 @@ public class OctalToBinary {
         int i = 0;
         String b = "";
 
+ //first we convert octal to decimal
+
             while (temp > 0) {
                 int r = temp % 10;
                 temp = temp / 10;
                 d = d + r * (int) Math.pow(8, i++);
             }
+//then we convert decimal to binary
 
             while (d > 0) {
                 int r = d % 2;
