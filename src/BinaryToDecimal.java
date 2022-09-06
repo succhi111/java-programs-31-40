@@ -2,20 +2,20 @@ import java.util.Scanner;
 
 public class BinaryToDecimal {
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter a binary number");
-        int num=sc.nextInt();
+        int num = sc.nextInt();
 
-        int d=0;
-        int temp=num;
-        int i=0;
+        int d = 0;
+        int temp = num;
+        int i = 0;
 
-        while(temp>0) {
+        while (temp > 0) {
             int r = temp % 10;
             temp = temp / 10;
             d = d + r * (int) Math.pow(2, i++);
         }
-        System.out.println("Decimal of " +num+ " is "+d);
-        }
+        System.out.println("Decimal of " + num + " is " + d);
     }
+}
 
